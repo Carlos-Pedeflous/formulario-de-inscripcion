@@ -7,7 +7,7 @@
     </head>
     <body>
         
-        <h1>Autodromo lalala</h1>
+        <h1>Autódromo Valdés</h1>
 
         <header>
             <nav>
@@ -22,8 +22,21 @@
         </header>
 
         <main>
-            <h2>Clasificatoria 26/09/2026</h2>
-            
+            <section>
+                <h2>Clasificatoria 26/09/2026</h2>
+                
+                <p>El próximo 26 de septiembre de 2026 se llevará a cabo una carrera clasificatoria en el Autódromo Valdés. Los participantes podrán poner a prueba sus vehículos y competir para obtener un lugar en la carrera principal.</p>
+                
+                <h3>nuestra pista</h3>
+
+                <img src="recursos/imagenes/mapa_Mesa de trabajo 1.avif" alt="pista del autodromo galvez">
+                
+                <article>
+                    <h3>Sobre la clasificatoria</h3>
+                    <p>La carrera clasificatoria permitirá a los participantes competir por un lugar en la carrera principal.</p>
+                </article>
+            </section>
+
             <form>
 
             <section>
@@ -48,6 +61,17 @@
                 <input type="text" placeholder="Modelo" id="Modelo" required name="modelo del vehiculo">
                 <label for="Año">Año</label>
                 <input type="number" placeholder="año" id="Año" required name="año del vehiculo">
+
+                <label for="categoria">Categoría del vehículo</label>
+
+                <select id="categoria" name="categoria" required>
+                    <option value="">Seleccioná una categoría</option>
+                    <option value="deportivo">Deportivo</option>
+                    <option value="clasico">Clásico</option>
+                    <option value="jdm">JDM</option>
+                    <option value="muscle">Muscle Car</option>
+                    <option value="supercar">Supercar</option>
+                </select>
             </section>
 
             <section>
@@ -55,11 +79,11 @@
                 <h4>de que manera participaras?</h4>
                 
                 <label for="exhibicion">exhibicion</label>
-                <input type="radio" name="Participacion" id="exhibicion" required name="participa en exhibicion">
+                <input type="radio" name="Participacion" id="exhibicion" required >
                 <label for="Competencia">Competencia</label>
-                <input type="radio" name="Participacion" id="Competencia" name="participa en Competencia">
+                <input type="radio" name="Participacion" id="Competencia" >
                 <label for="Ambos">Ambos</label>
-                <input type="radio" name="Participacion" id="Ambos" name="participa en Ambos">
+                <input type="radio" name="Participacion" id="Ambos" >
             </section>
             <section>
                 <h3>caracteristicas del vehiculo</h3>
@@ -88,6 +112,10 @@
 
             </form>
         </main>
+
+        <footer>
+            <p>© 2026 Autódromo Valdés</p>
+        </footer>
 
     </body>
 </html>
