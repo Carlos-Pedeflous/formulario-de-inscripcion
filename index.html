@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro para un evento de autos</title>
-</head>
-<body>
-    
-    
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro para un evento de autos</title>
+    </head>
+    <body>
+        
+        <h1>Autodromo lalala</h1>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="..." target="_blank">Eventos</a></li>
+                    <li><a href="..." target="_blank">Pruebas de pista</a></li>
+                    <li><a href="..." target="_blank">Licencia Médica</a></li>
+                    <li><a href="..." target="_blank">Autódromo</a></li>
+                    <li><a href="..." target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Clasificatoria 26/09/2026</h2>
+            
+            <form>
+
+            <section>
+            <h3>Inscripciones</h3>
+
+            <h4>Datos del participante</h4>
+            <label for="Nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" required id="Nombre" name="nombre">
+            <label for="email">email</label>
+            <input type="email" placeholder="email" required id="email" name="email">
+            <label for="telefono">telefono</label>
+            <input type="tel" placeholder="telefono de Contacto" required id="telefono" name="telefono">
+            <label for="edad">edad</label>
+            <input type="number" placeholder="edad" required id="edad" name="edad">
+            </section>
+
+            <section>
+                <h4>Información del auto</h4>
+                <label for="marca">marca</label>
+                <input type="text" placeholder="marca" id="marca" required name="marca del vehiculo">
+                <label for="Modelo">Modelo</label>
+                <input type="text" placeholder="Modelo" id="Modelo" required name="modelo del vehiculo">
+                <label for="Año">Año</label>
+                <input type="number" placeholder="año" id="Año" required name="año del vehiculo">
+            </section>
+
+            <section>
+                <h3>Participacion</h3>
+                <h4>de que manera participaras?</h4>
+                
+                <label for="exhibicion">exhibicion</label>
+                <input type="radio" name="Participacion" id="exhibicion" required name="participa en exhibicion">
+                <label for="Competencia">Competencia</label>
+                <input type="radio" name="Participacion" id="Competencia" name="participa en Competencia">
+                <label for="Ambos">Ambos</label>
+                <input type="radio" name="Participacion" id="Ambos" name="participa en Ambos">
+            </section>
+            <section>
+                <h3>caracteristicas del vehiculo</h3>
+                <label for="turbo">turbo</label>
+                <input type="checkbox" id="turbo" name="tiene turbo">
+                <label for="sobrealimentación">Sobrealimentación</label>
+                <input type="checkbox" id="sobrealimentación" name="tiene sobrealimentación">
+                <label for="suspencion-neumatica">suspencion neumatica</label>
+                <input type="checkbox" id="suspencion-neumatica" name="tiene suspencion neumatica">
+            </section>
+            <section>
+                <h4>Información adicional</h4>
+
+                <label for="descripcion">Contanos brevemente sobre tu vehículo, sus modificaciones o cualquier información que consideres importante.</label>
+
+                <textarea id="descripcion" name="descripcion" rows="6" cols="50"></textarea>
+
+                <label for="foto">Foto del vehículo</label>
+                <input type="file" id="foto" name="foto del vehiculo" accept="image/*">
+            </section>
+
+            <section>
+                <button type="submit">Enviar inscripción</button>
+                <button type="reset">Reiniciar formulario</button>
+            </section>
+
+            </form>
+        </main>
+
+    </body>
 </html>
